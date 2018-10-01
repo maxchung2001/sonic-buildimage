@@ -42,6 +42,8 @@ supervisorctl start teamsyncd
 
 supervisorctl start fpmsyncd
 
+supervisorctl start portmgrd
+
 supervisorctl start intfmgrd
 
 supervisorctl start vlanmgrd
@@ -49,6 +51,8 @@ supervisorctl start vlanmgrd
 supervisorctl start zebra
 
 supervisorctl start buffermgrd
+
+supervisorctl start vrfmgrd
 
 # Start arp_update when VLAN exists
 VLAN=`sonic-cfggen -d -v 'VLAN.keys() | join(" ") if VLAN'`
