@@ -1,6 +1,10 @@
 # Object files
 *.o
 *.ko
+*.cmd
+*.mod.c
+*.symvers
+*.order
 *.obj
 *.elf
 
@@ -31,20 +35,3 @@
 # Debug files
 *.dSYM/
 *.su
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-*.o.d
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# Debian packaging
-*.debhelper.log
-*.postinst.debhelper
-*.postrm.debhelper
-*.prerm.debhelper
-*.substvars
